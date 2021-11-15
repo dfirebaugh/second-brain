@@ -20,8 +20,6 @@
     links.push({ source: "{{link.source}}", target: "{{link.target}}" })
   {% endfor %}
 
-  links.forEach(x => console.log(x))
-
   const index = { links: "{{links}}", backlinks: "{{backlinks}}" }
   const curPage = "{{page.url}}"
   const pathColors = [{ "/other": "#4388cc" }]
