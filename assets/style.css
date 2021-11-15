@@ -1,6 +1,10 @@
 :root {
-    --accent: #2D9CDB;
+    --accent: #446f8b;
+    --red: #904038;
     --grey: #444;
+    --primary: #446f8b;
+    --secondary: rgb(166, 167, 177);
+    --visited: rgb(179, 189, 88);
 }
 
 html {
@@ -17,6 +21,9 @@ body {
     min-height: 100vh;
 
     margin: 0 24px;
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
 }
 
 @media only screen and (max-width: 468px) {
@@ -114,10 +121,9 @@ small {font-size: 0.8em;}
     position: absolute;
     bottom: 8px;
     left: 100%;
-    background-color: #fff;
+    background-color: #222;
     border-radius: 4px;
     padding: 4px;
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
     width: 348px;
     max-height: 148px;
     overflow: hidden;
@@ -126,7 +132,6 @@ small {font-size: 0.8em;}
     content: "";
     position: absolute;
     bottom: 0;
-    background: linear-gradient(transparent, white);
     width: 100%;
     height: 24px;
 }

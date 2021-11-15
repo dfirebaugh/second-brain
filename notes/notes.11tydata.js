@@ -7,6 +7,7 @@ function caselessCompare(a, b) {
     return a.toLowerCase() === b.toLowerCase();
 }
 
+const noteMap = Object.create({});
 module.exports = {
     layout: "note.html",
     type: "note",
@@ -47,6 +48,41 @@ module.exports = {
             }
 
             return backlinks;
-        }
+        },
+        graphlinks: (data) => {
+            const notes = data.collections.notes;
+            let graphlinks = [];
+
+            notes.forEach(note => {
+                noteMap[note.data.title] = note.url;
+            })
+
+            // Search the other notes for graphlinks
+            for(const otherNote of notes) {
+                const noteContent = otherNote.template.frontMatter.content;
+
+                // Get all links from otherNote
+                const outboundLinks = (noteContent.match(wikilinkRegExp) || [])
+                    .map(link => (
+                        // Extract link location
+                        link.slice(2,-2)
+                            .split("|")[0]
+                            .replace(/.(md|markdown)\s?$/i, "")
+                            .trim()
+                    ));
+
+                outboundLinks.forEach(ol => {
+                    graphlinks.push({
+                        url: otherNote.url,
+                        source: otherNote.url,
+                        target: noteMap[ol],
+                        title: otherNote.data.title,
+                    })
+                })
+            }
+
+            return graphlinks;
+        },
+        
     }
 }

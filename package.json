@@ -1,22 +1,21 @@
 {
-  "name": "eleventy-garden",
+  "name": "second-brain",
   "version": "1.0.0",
-  "description": "A starter site for building a mind garden in eleventy.",
+  "description": "A collection of notes",
   "scripts": {
     "start": "eleventy --serve --quiet",
     "compile": "eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binyamin/eleventy-garden.git"
+    "url": "git+https://github.com/dfirebaugh/second-brain.git"
   },
   "keywords": [],
-  "author": "Binyamin Aron Green (https://binyam.in/)",
+  "author": "Dustin Firebaugh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/binyamin/eleventy-garden/issues"
+    "url": "https://github.com/dfirebaugh/second-brain/issues"
   },
-  "homepage": "https://github.com/binyamin/eleventy-garden#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-canary.44",
     "markdown-it": "^12.2.0",

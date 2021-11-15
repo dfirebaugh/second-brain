@@ -2,4 +2,7 @@
 layout: default
 ---
 # Hi
-I'm John Lemmon. I'm an umpteen year-old developer and musician from Liverpool, England.
+I'm [Dustin Firebaugh](https://dustinfirebaugh.com).
+Welcome to my second brain 🧠.
+
+[notes](/notes/)
