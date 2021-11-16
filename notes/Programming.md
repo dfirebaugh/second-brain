@@ -8,3 +8,4 @@ tags:
 * [[GoLang]]
 * [[Web Assembly]]
 * [[Design Patterns]]
+* [[Python Course]]

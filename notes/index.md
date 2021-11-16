@@ -14,7 +14,7 @@ It's meant to be entirely self serving, but I guess there's a small chance that 
 I'm currently experimenting with using [Obsidian](https://obsidian.md/) to edit the markdown files for this site.
 
 #### Publishing
-I'm using [evelenty](https://www.11ty.dev/) as a static site generator and publishing the site through [gh-pages](https://pages.github.com/).
+I'm using [eleventy](https://www.11ty.dev/) as a static site generator and publishing the site through [gh-pages](https://pages.github.com/).
 
 ## Notes
 * [[Fleeting Notes]]
@@ -25,3 +25,4 @@ I'm using [evelenty](https://www.11ty.dev/) as a static site generator and publi
 * [[Learning]]
 * [[Japan]]
 * [[Programming]]
+* [[Coursework]]
