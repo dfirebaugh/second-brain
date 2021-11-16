@@ -25,17 +25,17 @@
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
-<title>Programming • Dustin Firebaugh's Notes</title>
+<title>Spaced Repetition • Dustin Firebaugh's Notes</title>
 
 <meta name="description" content="a collection of notes...">
 
-<meta property="og:title" content="Programming • Dustin Firebaugh's Notes">
+<meta property="og:title" content="Spaced Repetition • Dustin Firebaugh's Notes">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://brain.dustinfirebaugh.com/notes/Programming/">
+<meta property="og:url" content="https://brain.dustinfirebaugh.com/notes/Spaced Repetition/">
 <meta property="og:image" content="/assets/avatar.png">
 <meta property="og:description" content="a collection of notes...">
 
-<link rel="canonical" href="https://brain.dustinfirebaugh.com/notes/Programming/">
+<link rel="canonical" href="https://brain.dustinfirebaugh.com/notes/Spaced Repetition/">
 
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
@@ -57,13 +57,18 @@
     </header>
     <main>
         <article>
-    <h1>Programming</h1>
-<ul>
-<li><a href="/notes/GoLang/">GoLang</a></li>
-<li><a href="/notes/Web%20Assembly/">Web Assembly</a></li>
-<li><a href="/notes/Design%20Patterns/">Design Patterns</a></li>
-<li><a href="/notes/Python%20Course/">Python Course</a></li>
-</ul>
+    <h1>Spaced Repetition</h1>
+<p>A system to help facilitate rote memorization.</p>
+<p>One of the most popular <a href="https://en.wikipedia.org/wiki/Spaced_repetition">Spaced Repetition Systems (SRS)</a> is <a href="https://apps.ankiweb.net/">Anki</a>.</p>
+<p>Anki is a great way to transfer the content that you are studying into long term memory.  I should point out that this should only be necessary in a few situations.  It's much more efficient to be able to reference something rather than memorizing it.  However, you may want to commit something fully to memory (e.g. learning <a href="https://en.wikipedia.org/wiki/Kanji#:~:text=Kanji%20(%E6%BC%A2%E5%AD%97%2C%20pronounced%20%5Bka%C9%B2d%CA%91i,literally%20means%20%22Han%20characters%22.)">Kanji</a></p>
+<p>The basic concept is that if you're familiar with something, you will see that card less frequently.  The things you aren't familiar will show up more often.  It's required of you to judge yourself honestly (i.e. you will be in control of deciding how well you know something).</p>
+<h2>Custom SRS</h2>
+<p>I built a custom SRS for learning <a href="https://en.wikipedia.org/wiki/Hiragana">hiragana</a> and <a href="https://en.wikipedia.org/wiki/Katakana">katakana</a></p>
+<p><a href="https://dfirebaugh.github.io/kana-board/">kana board demo</a></p>
+<p>This is basically digital flash cards.</p>
+<h2>Custom vs Anki</h2>
+<p>I would Anki is great if you're really trying to commit something to long term memory.  It has systems that will space cards that you're comfortable with over several days and sometimes weeks.</p>
+<p>A custom solution would be better if you're just trying to capture the basic concepts of something that you can then reference later.  It might also be good for learning something that isn't extremely dense.  With the custom solution, I was able to learn (read not write) hiragana fairly well in less than a week.</p>
 
 </article>
 <hr>
@@ -72,11 +77,27 @@
 <ul class="backlinks-container">
     
         <li class="backlink">
-            <a href="/notes/" class="backlink__link">About</a>
+            <a href="/notes/Learning/" class="backlink__link">Learning</a>
             <div class="backlink__preview" role="none">
-                <h1>About</h1>
-<p>This is a <a href="https://maggieappleton.com/garden-history">digital garden 🌿 or second brain 🧠</a> with some attempt at following <a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten</a> note taking.</p>
-<p>Hopefully this site will become some</p>
+                <h1>Learning</h1>
+<ul>
+<li><a href="/notes/The%20Feynman%20Technique/">The Feynman Technique</a></li>
+<li><a href="/notes/Spaced%20Repetition/">Spaced Repetition</a></li>
+<li><a href="/notes/Comprehensible%20Input/">Comprehensible Input</a></li>
+</ul>
+
+            </div>
+        </li>
+    
+        <li class="backlink">
+            <a href="/notes/Permanent Notes/" class="backlink__link">Permanent Notes</a>
+            <div class="backlink__preview" role="none">
+                <h1>Permanent Notes</h1>
+<ul>
+<li><a href="/notes/The%20Feynman%20Technique/">The Feynman Technique</a></li>
+<li><a href="/notes/Spaced%20Repetition/">Spaced Repetition</a></li>
+<li><a href="/notes/Comprehensible%20Input/">Comprehensible Input</a></li>
+</ul>
 
             </div>
         </li>
@@ -159,8 +180,8 @@
     links.push({ source: "/notes/", target: "/notes/Coursework/" })
   
 
-  const index = { links: "", backlinks: "[object Object]" }
-  const curPage = "/notes/Programming/"
+  const index = { links: "", backlinks: "[object Object],[object Object]" }
+  const curPage = "/notes/Spaced Repetition/"
   const pathColors = [{ "/other": "#4388cc" }]
   const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
 
