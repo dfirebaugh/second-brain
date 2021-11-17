@@ -9,3 +9,4 @@ tags:
 * [[Web Assembly]]
 * [[Design Patterns]]
 * [[Python Course]]
+* [[The Recurse Center]]

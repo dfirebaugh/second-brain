@@ -19,6 +19,12 @@ I'm specifically interested in this because it will allow for sandboxed apps on 
 
 It's also dynamically loadable.  So, you could send a wasm file from one microcontroller to another and run it.
 
+| name | size |
+|---------|-----|
+| [wasm.h](https://github.com/wasm3/wasm3-arduino/blob/main/src/wasm3.h) | 18KB |
+
+[an example of a wasm vm on a microcontroller](https://github.com/vshymanskyy/wasm3_dino_rpi_pico/blob/main/dino_vm.cpp)
+
 ### Smart Contracts
 It seems several major smart contract crypto currencies are moving to a wasm vm.
 

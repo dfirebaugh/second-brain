@@ -1,5 +1,8 @@
 # Language Acquisition
 
+## Refold
+[[Refold]] seems to be an excellent roadmap for acquiring a language.
+
 ## Acquiring a language vs learning a language
 [Steven Krashen](https://www.sk.com.br/sk-krash-english.html) suggests a better strategy for picking up a second language is through language acquisition.  This involves massive amount of input and minimal output in early stages.
 

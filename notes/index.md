@@ -2,7 +2,7 @@
 title: About
 ---
 # About
-This is a [digital garden 🌿 or second brain 🧠](https://maggieappleton.com/garden-history) with some attempt at following [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) note taking.
+This is a [digital garden 🌱 or second brain 🧠](https://maggieappleton.com/garden-history) with some attempt at following [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) note taking.
 
 Hopefully this site will become something that's easy for me to lookup things that I've already learned.
 I intend to use this to collect notes and thoughts.
