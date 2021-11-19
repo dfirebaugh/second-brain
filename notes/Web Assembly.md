@@ -19,6 +19,9 @@ I'm specifically interested in this because it will allow for sandboxed apps on 
 
 It's also dynamically loadable.  So, you could send a wasm file from one microcontroller to another and run it.
 
+#### Web Assembly Interpreter
+[https://github.com/wasm3/wasm3](https://github.com/wasm3/wasm3)
+
 | name | size |
 |---------|-----|
 | [wasm.h](https://github.com/wasm3/wasm3-arduino/blob/main/src/wasm3.h) | 18KB |
