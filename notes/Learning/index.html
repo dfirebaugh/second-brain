@@ -56,7 +56,17 @@
         </nav>
     </header>
     <main>
-        <article>
+        
+<style>
+    pre {
+        background: black;
+    }
+    code {
+        background-color: black;
+    }
+
+</style>
+<article>
     <h1>Learning</h1>
 <ul>
 <li><a href="https://seths.blog/2014/04/how-do-i-get-rid-of-the-fear/">dancing with fear</a></li>
@@ -87,6 +97,24 @@
             </div>
         </li>
     
+        <li class="backlink">
+            <a href="/notes/Py - Day 0/" class="backlink__link">Py - Day 0</a>
+            <div class="backlink__preview" role="none">
+                <h1>Day 0</h1>
+<h2>Learning</h2>
+<p>Some notes about <a href="/notes/Learning/">Learning</a></p>
+<h2>Functions</h2>
+<p>Functions are a grouping of instructions.</p>
+<blockquote>
+<p>tip: functions can be as large as you want, but it's generally a good idea that  functions should do one thing.</p>
+</blockquote>
+<blockquote>
+<p>tip: Give functi</p>
+</blockquote>
+
+            </div>
+        </li>
+    
 </ul>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
@@ -108,11 +136,19 @@
 <script>
   const links = []
   
-    links.push({ source: "/notes/All Japanese All The Time/", target: "/notes/Spaced Repetition/" })
+    links.push({ source: "/notes/Fleeting Notes/", target: "" })
+  
+    links.push({ source: "/notes/Literature Notes/", target: "/notes/Language Acquisition/" })
   
     links.push({ source: "/notes/Coursework/", target: "/notes/C846 - Business of IT Applications/" })
   
-    links.push({ source: "/notes/Fleeting Notes/", target: "" })
+    links.push({ source: "/notes/Permanent Notes/", target: "/notes/The Feynman Technique/" })
+  
+    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Spaced Repetition/" })
+  
+    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Comprehensible Input/" })
+  
+    links.push({ source: "/notes/All Japanese All The Time/", target: "/notes/Spaced Repetition/" })
   
     links.push({ source: "/notes/Japan/", target: "/notes/City Pop/" })
   
@@ -146,14 +182,6 @@
   
     links.push({ source: "/notes/Learning/", target: "/notes/Comprehensible Input/" })
   
-    links.push({ source: "/notes/Literature Notes/", target: "/notes/Language Acquisition/" })
-  
-    links.push({ source: "/notes/Permanent Notes/", target: "/notes/The Feynman Technique/" })
-  
-    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Spaced Repetition/" })
-  
-    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Comprehensible Input/" })
-  
     links.push({ source: "/notes/Programming/", target: "/notes/GoLang/" })
   
     links.push({ source: "/notes/Programming/", target: "/notes/Web Assembly/" })
@@ -167,8 +195,6 @@
     links.push({ source: "/notes/Refold/", target: "/notes/All Japanese All The Time/" })
   
     links.push({ source: "/notes/Refold/", target: "/notes/Language Acquisition/" })
-  
-    links.push({ source: "/notes/Web Assembly/", target: "/notes/Web Assembly Text Format/" })
   
     links.push({ source: "/notes/", target: "/notes/Fleeting Notes/" })
   
@@ -184,8 +210,16 @@
   
     links.push({ source: "/notes/", target: "/notes/Coursework/" })
   
+    links.push({ source: "/notes/Py - Day 0/", target: "/notes/Learning/" })
+  
+    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 0/" })
+  
+    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 1/" })
+  
+    links.push({ source: "/notes/Web Assembly/", target: "/notes/Web Assembly Text Format/" })
+  
 
-  const index = { links: "", backlinks: "[object Object]" }
+  const index = { links: "", backlinks: "[object Object],[object Object]" }
   const curPage = "/notes/Learning/"
   const pathColors = [{ "/other": "#4388cc" }]
   const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]

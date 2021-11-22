@@ -56,12 +56,34 @@
         </nav>
     </header>
     <main>
-        <article>
+        
+<style>
+    pre {
+        background: black;
+    }
+    code {
+        background-color: black;
+    }
+
+</style>
+<article>
     <h1>Web Assembly Text Format</h1>
 <p>Textual representation of the wasm binary format.</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format">https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format</a></p>
 <h2>Demos</h2>
 <p>Here are some excellent demos written with Web Assembly Text format: <a href="https://github.com/binji/raw-wasm">https://github.com/binji/raw-wasm</a></p>
+<h1>Writing raw WAT files</h1>
+<p>Each web assembly module (in wat) is represented as an s-expression (which is basically a tree).</p>
+<p>most basic module</p>
+<pre><code>(module)
+</code></pre>
+<h2>Types</h2>
+<ul>
+<li><code>i32</code>  32-bit integer</li>
+<li><code>i64</code> 64-bit integer</li>
+<li><code>f32</code> 32-bit float</li>
+<li><code>f64</code> 64-bit float</li>
+</ul>
 
 </article>
 <hr>
@@ -106,11 +128,19 @@
 <script>
   const links = []
   
-    links.push({ source: "/notes/All Japanese All The Time/", target: "/notes/Spaced Repetition/" })
+    links.push({ source: "/notes/Fleeting Notes/", target: "" })
+  
+    links.push({ source: "/notes/Literature Notes/", target: "/notes/Language Acquisition/" })
   
     links.push({ source: "/notes/Coursework/", target: "/notes/C846 - Business of IT Applications/" })
   
-    links.push({ source: "/notes/Fleeting Notes/", target: "" })
+    links.push({ source: "/notes/Permanent Notes/", target: "/notes/The Feynman Technique/" })
+  
+    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Spaced Repetition/" })
+  
+    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Comprehensible Input/" })
+  
+    links.push({ source: "/notes/All Japanese All The Time/", target: "/notes/Spaced Repetition/" })
   
     links.push({ source: "/notes/Japan/", target: "/notes/City Pop/" })
   
@@ -144,14 +174,6 @@
   
     links.push({ source: "/notes/Learning/", target: "/notes/Comprehensible Input/" })
   
-    links.push({ source: "/notes/Literature Notes/", target: "/notes/Language Acquisition/" })
-  
-    links.push({ source: "/notes/Permanent Notes/", target: "/notes/The Feynman Technique/" })
-  
-    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Spaced Repetition/" })
-  
-    links.push({ source: "/notes/Permanent Notes/", target: "/notes/Comprehensible Input/" })
-  
     links.push({ source: "/notes/Programming/", target: "/notes/GoLang/" })
   
     links.push({ source: "/notes/Programming/", target: "/notes/Web Assembly/" })
@@ -166,8 +188,6 @@
   
     links.push({ source: "/notes/Refold/", target: "/notes/Language Acquisition/" })
   
-    links.push({ source: "/notes/Web Assembly/", target: "/notes/Web Assembly Text Format/" })
-  
     links.push({ source: "/notes/", target: "/notes/Fleeting Notes/" })
   
     links.push({ source: "/notes/", target: "/notes/Literature Notes/" })
@@ -181,6 +201,14 @@
     links.push({ source: "/notes/", target: "/notes/Programming/" })
   
     links.push({ source: "/notes/", target: "/notes/Coursework/" })
+  
+    links.push({ source: "/notes/Py - Day 0/", target: "/notes/Learning/" })
+  
+    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 0/" })
+  
+    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 1/" })
+  
+    links.push({ source: "/notes/Web Assembly/", target: "/notes/Web Assembly Text Format/" })
   
 
   const index = { links: "", backlinks: "[object Object]" }

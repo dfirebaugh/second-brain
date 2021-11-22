@@ -25,17 +25,17 @@
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
-<title>City Pop • Dustin Firebaugh's Notes</title>
+<title>Py - Day 0 • Dustin Firebaugh's Notes</title>
 
 <meta name="description" content="a collection of notes...">
 
-<meta property="og:title" content="City Pop • Dustin Firebaugh's Notes">
+<meta property="og:title" content="Py - Day 0 • Dustin Firebaugh's Notes">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://brain.dustinfirebaugh.com/notes/City Pop/">
+<meta property="og:url" content="https://brain.dustinfirebaugh.com/notes/Py - Day 0/">
 <meta property="og:image" content="/assets/avatar.png">
 <meta property="og:description" content="a collection of notes...">
 
-<link rel="canonical" href="https://brain.dustinfirebaugh.com/notes/City Pop/">
+<link rel="canonical" href="https://brain.dustinfirebaugh.com/notes/Py - Day 0/">
 
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
@@ -67,29 +67,109 @@
 
 </style>
 <article>
-    <h1>City Pop</h1>
-<p><a href="https://en.wikipedia.org/wiki/City_pop">City Pop</a> is a Japanese music genre from the 1980s.  A time when japan had an economic and technological boom.</p>
-<p>City Pop is kind of a mix between soft rock, funk, disco, R&amp;B, and pop.</p>
-<h3>Playlists</h3>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=tnwDVc3R_CI&amp;list=PL0IrpCjpbz8BnI0YwBLi3d3P74XuN6CD9">Tatsuro Yamashita</a></li>
-<li><a href="https://www.youtube.com/watch?v=dOSESpbQ19Y">Come Along - Tatsuro Yamashita</a> - radio host <a href="https://en.wikipedia.org/wiki/Kamasami_Kong">Kamasami Kong</a></li>
-<li><a href="https://youtu.be/ZMr-VXF4xkY">Best of Tatsuro Yamashita</a></li>
-<li><a href="https://youtu.be/eGslweDOihs">City Pop Playlist</a></li>
-<li><a href="https://youtu.be/ZBYwUaoJquM">Mellow Days Playlist</a></li>
-</ul>
+    <h1>Day 0</h1>
+<h2>Learning</h2>
+<p>Some notes about <a href="/notes/Learning/">Learning</a></p>
+<h2>Functions</h2>
+<p>Functions are a grouping of instructions.</p>
 <blockquote>
-<p>sidenote: Tatsuro Yamashita makes me want to buy a telecaster</p>
+<p>tip: functions can be as large as you want, but it's generally a good idea that  functions should do one thing.</p>
 </blockquote>
-<h3>Plastic Love</h3>
-<p><a href="https://en.wikipedia.org/wiki/Plastic_Love">Plastic Love</a> is an excellent song by city pop legend Mariya Takeuchi.  The song wasn't that popular when it originally came out, but in modern day, Plastic Love has become insanely popular thanks to the power of the internet.</p>
-<p>Plastic love is a narrative that touches on how we lean on consumerism(buying electronics) to fill in the dark/empty lives we have.</p>
-<p>From a musical perspective, I find it interesting that the chorus/hook of the song doesn't show up until the song is about 80% done.</p>
+<blockquote>
+<p>tip: Give functions descriptive names.  Usually verbs are good for function names.</p>
+</blockquote>
+<pre><code class="language-python">def hello(name):
+	return 'Hello {}'.format(name)
+</code></pre>
+<h3>Anatomy of a Function</h3>
+<p>Let's analyze our <code>hello</code> function.</p>
+<pre><code class="language-python">def hello(name) -&gt; str:
+	return 'Hello {}'.format(name)
+
+hello('Dustin')
+</code></pre>
 <ul>
-<li><a href="https://youtu.be/9Gj47G2e1Jc">Plastic Love - Mariya Takeuchi</a></li>
-<li><a href="https://youtu.be/PlPTXR7e6As">Plastic Love Documentary</a> ❤️❤️❤️</li>
-<li><a href="https://youtu.be/JGTZCrqCjCM">Plastic Love -- sick dance moves</a></li>
+<li><code>def</code>  - keyword to define a function</li>
+<li><code>hello</code> - the functions name</li>
+<li><code>(name)</code> - the arguments (i.e. what we pass into the function)</li>
+<li><code>-&gt; str</code> - return type declaration (optional)</li>
+<li>function body - the set of instructions inside the function</li>
+<li>return statement (optional)</li>
+<li><code>hello('Dustin')</code> - function call</li>
 </ul>
+<h2>Operators</h2>
+<p><a href="https://www.w3schools.com/python/python_operators.asp">python operators</a></p>
+<h2>Branching</h2>
+<p>In programming <a href="https://magpi.raspberrypi.com/articles/branching-if-else-python">branching</a> refers to when the processing flow of a program can go one way or another.</p>
+<p>Basically, if conditions.</p>
+<pre><code class="language-python">if False:
+    print(&quot;The first block of code ran&quot;)
+elif True:
+    print(&quot;The second block of code ran&quot;)
+else:
+    print(&quot;The third block of code ran&quot;)
+</code></pre>
+<h2>Recursion</h2>
+<p>Recursion is when a function calls itself until it doesn't.</p>
+<p>To achieve this, you will have a base case that must eventually get called.</p>
+<p>for example:</p>
+<pre><code class="language-python">def recurse(num):
+	if num == 10:
+		return
+	else:
+		print(num)
+		return recurse(num+1)
+</code></pre>
+<p>The base case is <code>if num == 10</code>.  If the base case is not met, we call the function again, except we increase the passed in number by 1.</p>
+<h2>Exercises</h2>
+<h4>Hello, World</h4>
+<p>Write a program that prints ‘Hello World’ to the screen.</p>
+<h4>Guessing Game</h4>
+<p>Write a guessing game where the user has to guess a secret number. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries needed should be printed. It counts only as one try if they input the same number multiple times consecutively.</p>
+<h4>FizzBuzz</h4>
+<p>Write a program that prints out all numbers from 1 to 100.
+If the number is divisible by 3, print out Fizz.
+If the number if divisible by 5, print out Buzz.</p>
+<h2>Tips</h2>
+<h3>Try to avoid nesting</h3>
+<p>You won't be able to avoid nesting entirely...</p>
+<p>It may help you think about how to write the function if handle your edge cases at the top.  Then the <code>thing</code> that the function actually does would be at the end of the function.</p>
+<p>This can reduce the amount of nesting and make it easier for someone to figure out what the function actually does.</p>
+<p>If you're finding yourself wanted to do a bunch of nesting in the function, it may be an indication that you need to write additional functions.</p>
+<p>e.g.</p>
+<pre><code class="language-python">def is_odd(num):
+  return num % 2 != 0
+
+def print_numbers(current_number):
+  if current_number == 100:
+    return
+
+  if is_odd(current_number):
+    print('\033[92m', end='')
+  else:
+    print('\033[94m', end='')
+
+  print(current_number)
+  print_numbers(current_number+1)
+
+
+print_numbers(1)
+</code></pre>
+<h3>Try to make it human readable</h3>
+<blockquote>
+<p>“... Clean code reads like well-written prose...&quot; -- Grady Booch author of Object<br>
+Oriented Analysis and Design with<br>
+Applications”</p>
+</blockquote>
+<p>It's important to try to communicate what the code does in a human readable way.</p>
+<p>Rather than writing something like</p>
+<pre><code class="language-python">if num % 2 != 0:
+	// do something
+</code></pre>
+<p>it would read better as:</p>
+<pre><code class="language-python">if is_odd(num):
+	// do something
+</code></pre>
 
 </article>
 <hr>
@@ -98,24 +178,16 @@
 <ul class="backlinks-container">
     
         <li class="backlink">
-            <a href="/notes/Japan/" class="backlink__link">Japan</a>
+            <a href="/notes/Python Course/" class="backlink__link">Python Course</a>
             <div class="backlink__preview" role="none">
-                <h1>All Things Japan</h1>
-<h2>Music</h2>
+                <h1>Python Course</h1>
+<p>This is a course that I'm planning on teaching.  I'll use this space to collect thoughts and plan lessons.</p>
+<p><span style="color: red;">work in progress</span></p>
+<h1>Roadmap</h1>
+<h2><a href="/notes/Py%20-%20Day%200/">Py - Day 0</a></h2>
 <ul>
-<li><a href="/notes/City%20Pop/">City Pop</a></li>
-<li><a href="https://youtu.be/PbISczErpKY">Mrs. Green Apple - WanteD! WanteD!</a></li>
-</ul>
-<h2>Religion</h2>
-<ul>
-<li><a href="/notes/Shintoism/">Shintoism</a></li>
-</ul>
-<h2>Japanese Language</h2>
-<h4>Methods</h4>
-<ul>
-<li><a href="/notes/Refold/">Refold</a></li>
-<li><a href="/notes/All%20Japanese%20All%20The%20Time/">All Japanese All The Time</a></li>
-<li>[[Language Acq</li>
+<li>brief discussion about learning</li>
+<li>l</li>
 </ul>
 
             </div>
@@ -226,7 +298,7 @@
   
 
   const index = { links: "", backlinks: "[object Object]" }
-  const curPage = "/notes/City Pop/"
+  const curPage = "/notes/Py - Day 0/"
   const pathColors = [{ "/other": "#4388cc" }]
   const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
 
