@@ -25,4 +25,5 @@ I'm using [eleventy](https://www.11ty.dev/) as a static site generator and publi
 * [[Learning]]
 * [[Japan]]
 * [[Programming]]
+* [[Music]]
 * [[Coursework]]
