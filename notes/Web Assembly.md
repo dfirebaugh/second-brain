@@ -31,3 +31,6 @@ It's also dynamically loadable.  So, you could send a wasm file from one microco
 ### Smart Contracts
 It seems several major smart contract crypto currencies are moving to a wasm vm.
 
+
+### Web Assembly System Interface (WASI)
+[[Web Assembly System Interface]]

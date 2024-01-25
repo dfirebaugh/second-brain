@@ -10,7 +10,7 @@ Functions are a grouping of instructions.
 > tip: Give functions descriptive names.  Usually verbs are good for function names.
 
 ```python
-def hello(name):
+def greet(name):
 	return 'Hello {}'.format(name)
 ```
 
@@ -18,19 +18,19 @@ def hello(name):
 ### Anatomy of a Function
 Let's analyze our `hello` function.
 ```python
-def hello(name) -> str:
+def greet(name) -> str:
 	return 'Hello {}'.format(name)
 
-hello('Dustin')
+greet('Dustin')
 ```
 
 * `def`  - keyword to define a function
-* `hello` - the functions name
+* `greet` - the functions name
 * `(name)` - the arguments (i.e. what we pass into the function)
 * `-> str` - return type declaration (optional)
 * function body - the set of instructions inside the function
 * return statement (optional)
-* `hello('Dustin')` - function call
+* `greet('Dustin')` - function call
 
 ## Operators
 [python operators](https://www.w3schools.com/python/python_operators.asp)
@@ -59,9 +59,9 @@ for example:
 def recurse(num):
 	if num == 10:
 		return
-	else:
-		print(num)
-		return recurse(num+1)
+
+	print(num)
+	return recurse(num+1)
 ```
 
 The base case is `if num == 10`.  If the base case is not met, we call the function again, except we increase the passed in number by 1.
@@ -130,3 +130,28 @@ it would read better as:
 if is_odd(num):
 	// do something
 ```
+
+### Referential Transparency
+This is some fancy terminology.
+> Referential Transparency = given the same inputs, the function will always produce the same output.
+
+e.g.
+```python
+def add2(num) -> int:
+	return num + 2
+	
+add2(2)
+```
+
+If I pass 2 into the `add2` function, it will always return 4.
+
+This function is simple and easy to test.
+
+### Avoid side effects
+It's ideal that your functions don't produce side effects.
+
+A side effect is when your function reaches outside to of itself and modifies something.
+
+You won't be able to entirely avoid side effects and you probably don't want to.  
+
+Writing functions that don't have side effects makes your program easier to test and can help you avoid confusion as  you write your programs.
