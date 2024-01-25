@@ -78,48 +78,30 @@
 <blockquote>
 <p>tip: Give functions descriptive names.  Usually verbs are good for function names.</p>
 </blockquote>
-<pre><code class="language-python">def hello(name):
-	return 'Hello {}'.format(name)
-</code></pre>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span><br>	<span class="token keyword">return</span> <span class="token string">'Hello {}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span></code></pre>
 <h3>Anatomy of a Function</h3>
 <p>Let's analyze our <code>hello</code> function.</p>
-<pre><code class="language-python">def hello(name) -&gt; str:
-	return 'Hello {}'.format(name)
-
-hello('Dustin')
-</code></pre>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">str</span><span class="token punctuation">:</span><br>	<span class="token keyword">return</span> <span class="token string">'Hello {}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><br><br>greet<span class="token punctuation">(</span><span class="token string">'Dustin'</span><span class="token punctuation">)</span></code></pre>
 <ul>
 <li><code>def</code>  - keyword to define a function</li>
-<li><code>hello</code> - the functions name</li>
+<li><code>greet</code> - the functions name</li>
 <li><code>(name)</code> - the arguments (i.e. what we pass into the function)</li>
 <li><code>-&gt; str</code> - return type declaration (optional)</li>
 <li>function body - the set of instructions inside the function</li>
 <li>return statement (optional)</li>
-<li><code>hello('Dustin')</code> - function call</li>
+<li><code>greet('Dustin')</code> - function call</li>
 </ul>
 <h2>Operators</h2>
 <p><a href="https://www.w3schools.com/python/python_operators.asp">python operators</a></p>
 <h2>Branching</h2>
 <p>In programming <a href="https://magpi.raspberrypi.com/articles/branching-if-else-python">branching</a> refers to when the processing flow of a program can go one way or another.</p>
 <p>Basically, if conditions.</p>
-<pre><code class="language-python">if False:
-    print(&quot;The first block of code ran&quot;)
-elif True:
-    print(&quot;The second block of code ran&quot;)
-else:
-    print(&quot;The third block of code ran&quot;)
-</code></pre>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">if</span> <span class="token boolean">False</span><span class="token punctuation">:</span><br>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The first block of code ran"</span><span class="token punctuation">)</span><br><span class="token keyword">elif</span> <span class="token boolean">True</span><span class="token punctuation">:</span><br>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The second block of code ran"</span><span class="token punctuation">)</span><br><span class="token keyword">else</span><span class="token punctuation">:</span><br>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The third block of code ran"</span><span class="token punctuation">)</span></code></pre>
 <h2>Recursion</h2>
 <p>Recursion is when a function calls itself until it doesn't.</p>
 <p>To achieve this, you will have a base case that must eventually get called.</p>
 <p>for example:</p>
-<pre><code class="language-python">def recurse(num):
-	if num == 10:
-		return
-	else:
-		print(num)
-		return recurse(num+1)
-</code></pre>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">recurse</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span><br>	<span class="token keyword">if</span> num <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">:</span><br>		<span class="token keyword">return</span><br><br>	<span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><br>	<span class="token keyword">return</span> recurse<span class="token punctuation">(</span>num<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span></code></pre>
 <p>The base case is <code>if num == 10</code>.  If the base case is not met, we call the function again, except we increase the passed in number by 1.</p>
 <h2>Exercises</h2>
 <h4>Hello, World</h4>
@@ -137,24 +119,7 @@ If the number if divisible by 5, print out Buzz.</p>
 <p>This can reduce the amount of nesting and make it easier for someone to figure out what the function actually does.</p>
 <p>If you're finding yourself wanted to do a bunch of nesting in the function, it may be an indication that you need to write additional functions.</p>
 <p>e.g.</p>
-<pre><code class="language-python">def is_odd(num):
-  return num % 2 != 0
-
-def print_numbers(current_number):
-  if current_number == 100:
-    return
-
-  if is_odd(current_number):
-    print('\033[92m', end='')
-  else:
-    print('\033[94m', end='')
-
-  print(current_number)
-  print_numbers(current_number+1)
-
-
-print_numbers(1)
-</code></pre>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">is_odd</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span><br>  <span class="token keyword">return</span> num <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">!=</span> <span class="token number">0</span><br><br><span class="token keyword">def</span> <span class="token function">print_numbers</span><span class="token punctuation">(</span>current_number<span class="token punctuation">)</span><span class="token punctuation">:</span><br>  <span class="token keyword">if</span> current_number <span class="token operator">==</span> <span class="token number">100</span><span class="token punctuation">:</span><br>    <span class="token keyword">return</span><br><br>  <span class="token keyword">if</span> is_odd<span class="token punctuation">(</span>current_number<span class="token punctuation">)</span><span class="token punctuation">:</span><br>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'\033[92m'</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">)</span><br>  <span class="token keyword">else</span><span class="token punctuation">:</span><br>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'\033[94m'</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">)</span><br><br>  <span class="token keyword">print</span><span class="token punctuation">(</span>current_number<span class="token punctuation">)</span><br>  print_numbers<span class="token punctuation">(</span>current_number<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><br><br><br>print_numbers<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span></code></pre>
 <h3>Try to make it human readable</h3>
 <blockquote>
 <p>“... Clean code reads like well-written prose...&quot; -- Grady Booch author of Object<br>
@@ -163,13 +128,23 @@ Applications”</p>
 </blockquote>
 <p>It's important to try to communicate what the code does in a human readable way.</p>
 <p>Rather than writing something like</p>
-<pre><code class="language-python">if num % 2 != 0:
-	// do something
-</code></pre>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">if</span> num <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span><br>	<span class="token operator">//</span> do something</code></pre>
 <p>it would read better as:</p>
-<pre><code class="language-python">if is_odd(num):
-	// do something
-</code></pre>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">if</span> is_odd<span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span><br>	<span class="token operator">//</span> do something</code></pre>
+<h3>Referential Transparency</h3>
+<p>This is some fancy terminology.</p>
+<blockquote>
+<p>Referential Transparency = given the same inputs, the function will always produce the same output.</p>
+</blockquote>
+<p>e.g.</p>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">add2</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span><br>	<span class="token keyword">return</span> num <span class="token operator">+</span> <span class="token number">2</span><br>	<br>add2<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span></code></pre>
+<p>If I pass 2 into the <code>add2</code> function, it will always return 4.</p>
+<p>This function is simple and easy to test.</p>
+<h3>Avoid side effects</h3>
+<p>It's ideal that your functions don't produce side effects.</p>
+<p>A side effect is when your function reaches outside to of itself and modifies something.</p>
+<p>You won't be able to entirely avoid side effects and you probably don't want to.</p>
+<p>Writing functions that don't have side effects makes your program easier to test and can help you avoid confusion as  you write your programs.</p>
 
 </article>
 <hr>
@@ -218,6 +193,22 @@ Applications”</p>
   
     links.push({ source: "/notes/Coursework/", target: "/notes/C846 - Business of IT Applications/" })
   
+    links.push({ source: "/notes/Coursework/", target: "/notes/Game Design/" })
+  
+    links.push({ source: "/notes/Programming/", target: "/notes/GoLang/" })
+  
+    links.push({ source: "/notes/Programming/", target: "/notes/20 Hours to Golang/" })
+  
+    links.push({ source: "/notes/Programming/", target: "/notes/Web Assembly/" })
+  
+    links.push({ source: "/notes/Programming/", target: "/notes/Design Patterns/" })
+  
+    links.push({ source: "/notes/Programming/", target: "/notes/Python Course/" })
+  
+    links.push({ source: "/notes/Programming/", target: "/notes/The Recurse Center/" })
+  
+    links.push({ source: "/notes/Programming/", target: "/notes/Graphics/" })
+  
     links.push({ source: "/notes/Fleeting Notes/", target: "" })
   
     links.push({ source: "/notes/Japan/", target: "/notes/City Pop/" })
@@ -260,27 +251,19 @@ Applications”</p>
   
     links.push({ source: "/notes/Permanent Notes/", target: "/notes/Comprehensible Input/" })
   
-    links.push({ source: "/notes/Programming/", target: "/notes/GoLang/" })
-  
-    links.push({ source: "/notes/Programming/", target: "/notes/Web Assembly/" })
-  
-    links.push({ source: "/notes/Programming/", target: "/notes/Design Patterns/" })
-  
-    links.push({ source: "/notes/Programming/", target: "/notes/Python Course/" })
-  
-    links.push({ source: "/notes/Programming/", target: "/notes/The Recurse Center/" })
-  
     links.push({ source: "/notes/Py - Day 0/", target: "/notes/Learning/" })
-  
-    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 0/" })
-  
-    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 1/" })
   
     links.push({ source: "/notes/Refold/", target: "/notes/All Japanese All The Time/" })
   
     links.push({ source: "/notes/Refold/", target: "/notes/Language Acquisition/" })
   
+    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 0/" })
+  
+    links.push({ source: "/notes/Python Course/", target: "/notes/Py - Day 1/" })
+  
     links.push({ source: "/notes/Web Assembly/", target: "/notes/Web Assembly Text Format/" })
+  
+    links.push({ source: "/notes/Web Assembly/", target: "/notes/Web Assembly System Interface/" })
   
     links.push({ source: "/notes/", target: "/notes/Fleeting Notes/" })
   
