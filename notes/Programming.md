@@ -11,4 +11,5 @@ tags:
 * [[Design Patterns]]
 * [[Python Course]]
 * [[The Recurse Center]]
+* [[Building a Compiler]]
 * [[Graphics]]
