@@ -7,6 +7,9 @@ tags:
 
 # All Things Japan
 
+## Language
+[[Japanese Language]]
+
 ## Music
 * [[City Pop]]
 * [Mrs. Green Apple - WanteD! WanteD!](https://youtu.be/PbISczErpKY)
@@ -14,17 +17,3 @@ tags:
 ## Religion
 * [[Shintoism]]
 
-## Japanese Language
-
-#### Methods
-* [[Refold]]
-* [[All Japanese All The Time]]
-* [[Language Acquisition]]
-
- #### Books
-* [[Remembering the Kanji]]
-* [[Genki]]
-
-#### Apps
-* [[Pimsleur]]
-* [[Busuu]]
