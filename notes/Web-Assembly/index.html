@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
-    <title>Graphics • Dustin Firebaugh's Notes</title>
-    <meta property="og:title" content="Graphics • Dustin Firebaugh's Notes">
+    <title>Web-Assembly • Dustin Firebaugh's Notes</title>
+    <meta property="og:title" content="Web-Assembly • Dustin Firebaugh's Notes">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
@@ -36,21 +36,29 @@
             }
         </style>
         <article>
-            <p><a href="https://jcgt.org/">https://jcgt.org/</a></p>
-<h3>Build a Software Rasterizer</h3>
+            <h1>Web Assembly</h1>
 <ul>
-<li><a href="https://github.com/ssloy/tinyrenderer">https://github.com/ssloy/tinyrenderer</a></li>
-<li><a href="https://tayfunkayhan.wordpress.com/2018/11/24/rasterization-in-one-weekend-part-i/">https://tayfunkayhan.wordpress.com/2018/11/24/rasterization-in-one-weekend-part-i/</a></li>
-<li><a href="https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html">https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html</a></li>
+<li><a href="/notes/Web-Assembly-Text-Format/">Web Assembly Text Format</a></li>
 </ul>
-<h1>Font Rendering</h1>
-<ul>
-<li><a href="https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf">https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf</a></li>
-<li><a href="https://learnopengl.com/In-Practice/Text-Rendering">https://learnopengl.com/In-Practice/Text-Rendering</a></li>
-<li><a href="https://sluglibrary.com/">https://sluglibrary.com/</a></li>
-<li><a href="https://faultlore.com/blah/text-hates-you/">https://faultlore.com/blah/text-hates-you/</a></li>
-<li><a href="https://lambdacube3d.wordpress.com/2014/11/12/playing-around-with-font-rendering/">https://lambdacube3d.wordpress.com/2014/11/12/playing-around-with-font-rendering/</a></li>
-</ul>
+<p>I did a write up Web Assembly when i first took a look at it on my <a href="https://dustinfirebaugh.com/blog/Web_Assembly/">blog</a>.</p>
+<h3>High Level</h3>
+<blockquote>
+<p>WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications — <a href="https://webassembly.org/">Web Assembly Home Page</a></p>
+</blockquote>
+<h3>Microcontrollers</h3>
+<p>I think web assembly also has an interesting role to play in the microcontroller space.</p>
+<p>I'm specifically interested in this because it will allow for sandboxed apps on a microcontroller that would also easily run in a different environment (e.g. the browser).</p>
+<p>It's also dynamically loadable.  So, you could send a wasm file from one microcontroller to another and run it.</p>
+<h4>Web Assembly Interpreter</h4>
+<p><a href="https://github.com/wasm3/wasm3">https://github.com/wasm3/wasm3</a></p>
+<p>| name | size |
+|---------|-----|
+| <a href="https://github.com/wasm3/wasm3-arduino/blob/main/src/wasm3.h">wasm.h</a> | 18KB |</p>
+<p><a href="https://github.com/vshymanskyy/wasm3_dino_rpi_pico/blob/main/dino_vm.cpp">an example of a wasm vm on a microcontroller</a></p>
+<h3>Smart Contracts</h3>
+<p>It seems several major smart contract crypto currencies are moving to a wasm vm.</p>
+<h3>Web Assembly System Interface (WASI)</h3>
+<p><a href="/notes/Web-Assembly-System-Interface/">Web Assembly System Interface</a></p>
 
         </article>
         <hr>
