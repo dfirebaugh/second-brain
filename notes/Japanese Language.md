@@ -1,5 +1,7 @@
 ## Japanese Language
 
+[verb conjugation](https://www.tofugu.com/japanese-grammar/verb-conjugation-groups/)
+
 #### Methods
 * [[Refold]]
 * [[All Japanese All The Time]]
@@ -14,3 +16,5 @@
 * [[Busuu]]
 * [[wanikani]]
 * [[bunpro]]
+
+

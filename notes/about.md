@@ -1,6 +1,4 @@
----
-title: About
----
+
 # About
 This is a [digital garden 🌱 or second brain 🧠](https://maggieappleton.com/garden-history) with some attempt at following [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) note taking.
 
