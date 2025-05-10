@@ -1,0 +1,36 @@
+* Web Assembly Text Format
+:PROPERTIES:
+:CUSTOM_ID: web-assembly-text-format
+:END:
+Textual representation of the wasm binary format.
+
+https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format
+
+** Demos
+:PROPERTIES:
+:CUSTOM_ID: demos
+:END:
+Here are some excellent demos written with Web Assembly Text format:
+https://github.com/binji/raw-wasm
+
+* Writing raw WAT files
+:PROPERTIES:
+:CUSTOM_ID: writing-raw-wat-files
+:END:
+Each web assembly module (in wat) is represented as an s-expression
+(which is basically a tree).
+
+most basic module
+
+#+begin_example
+(module)
+#+end_example
+
+** Types
+:PROPERTIES:
+:CUSTOM_ID: types
+:END:
+- =i32= 32-bit integer
+- =i64= 64-bit integer
+- =f32= 32-bit float
+- =f64= 64-bit float

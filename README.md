@@ -21,8 +21,6 @@ go run ./cmd/devserver
 
 ### Conventions
 
-The `notes` dir is a flat directory of markdown files.  These markdown files will be parsed into static html files.
-
-Double square brackets represents an internal link. e.g. `[[Some Internal Page]]` will output `<a href="/notes/Some-Internal-Page">Some Internal Page</a>`
+The `notes` dir is a flat directory of org files.  These org files will be parsed into static html files.
 
 `Backlinks` are pages that link to the current page.

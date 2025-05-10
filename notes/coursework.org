@@ -1,0 +1,5 @@
+* Coursework
+:PROPERTIES:
+:CUSTOM_ID: coursework
+:END:
+- [[./game_design.org][Game Design]]

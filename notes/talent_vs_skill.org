@@ -1,0 +1,7 @@
+* Talent vs Skill
+:PROPERTIES:
+:CUSTOM_ID: talent-vs-skill
+:END:
+Talent is something that you are born with and it's immutable.
+
+Skill is something you choose to put the effort in to learn.

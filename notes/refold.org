@@ -1,0 +1,7 @@
+* Refold
+:PROPERTIES:
+:CUSTOM_ID: refold
+:END:
+[[https://refold.la/][Refold]] has distilled methods from [[All Japanese
+All The Time]], reources, and other ideas of [[./Language Acquisition.org]]
+into a nice modern looking roadmap.

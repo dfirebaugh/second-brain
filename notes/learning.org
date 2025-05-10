@@ -1,0 +1,17 @@
+* Learning
+:PROPERTIES:
+:CUSTOM_ID: learning
+:END:
+- [[https://seths.blog/2014/04/how-do-i-get-rid-of-the-fear/][dancin
+  with fear]]
+- [[https://seths.blog/2015/08/grit-and-hard-work/][Grit]]
+- [[./reps.org][Reps]]
+- [[./talent_vs_skill.org][Talent vs. Skill]] 
+
+** Techniques
+:PROPERTIES:
+:CUSTOM_ID: Techniques
+:END:
+- [[./the_feynman_technique][The Feynman Technique]]
+- [[./spaced_repetition.org][Spaced Repetition]]
+- [[./comprehensible_input.org][Comprehensible Input]]

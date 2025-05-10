@@ -1,0 +1,42 @@
+* Comprehensible Input
+:PROPERTIES:
+:CUSTOM_ID: comprehensible-input
+:END:
+[[https://en.wikipedia.org/wiki/Input_hypothesis][Comprehensible input]]
+was developed by [[https://en.wikipedia.org/wiki/Stephen_Krashen][Steven
+Krashen]] as a method for language learning. I believe this can be
+applied in other areas of learning.
+
+The basic idea is to learn enough about the concept that you can explore
+the concept further simply by applying the concept. It may be
+uncomfortable when you come across things you don't know, but since you
+have a some familiarity the context may help you understand those things
+you don't know.
+
+** Language learning
+:PROPERTIES:
+:CUSTOM_ID: language-learning
+:END:
+In language learning, this can be achieved through reading and
+listening. When you don't know certain words, you can derive their
+meaning from context (or by looking them up). By experiencing these
+words in the context that they are used, it can help to solidify your
+learning.
+
+** Applied in programming
+:PROPERTIES:
+:CUSTOM_ID: applied-in-programming
+:END:
+I believe this concept can be applied to learning programming languages
+on some level.\\
+I often see programming courses try to teach several fundamental
+concepts at once. For a beginner, this can be a lot to internalize. I'd
+like to experiment with teaching a minimal amount of concepts that will
+get someone started developing and that will be enough to propel them
+into learning more advanced concepts. This might start as a "learn
+functions first" method of learning programming.
+
+I found a
+[[https://www.researchgate.net/publication/305221737_The_teaching_of_functions_as_the_first_step_to_learn_imperative_programming][paper]]
+that seems to align with these thoughts. I might chose this method for
+the python course I'm putting together.

@@ -1,0 +1,30 @@
+** Japanese Language
+:PROPERTIES:
+:CUSTOM_ID: japanese-language
+:END:
+[[https://www.tofugu.com/japanese-grammar/verb-conjugation-groups/][verb
+conjugation]]
+
+**** Methods
+:PROPERTIES:
+:CUSTOM_ID: methods
+:END:
+- [[Refold]]
+- [[All Japanese All The Time]]
+- [[Language Acquisition]]
+
+**** Books
+:PROPERTIES:
+:CUSTOM_ID: books 
+:END:
+- [[./remembering_the_kanji.org][Remembering the Kanji]]
+- [[./genki.org][Genki]]
+
+**** Apps
+:PROPERTIES:
+:CUSTOM_ID: apps
+:END:
+- [[./pimsleur.org][Pimsleur]]
+- [[./busuu.org][Busuu]]
+- [[./wanikani.org][wanikani]]
+- [[./bunpro.org][bunpro]]

@@ -1,0 +1,9 @@
+* Pimsleur
+:PROPERTIES:
+:CUSTOM_ID: pimsleur
+:END:
+[[https://www.pimsleur.com/][Pimsleur]] is an app that has excellent
+mobile app that allows you to listen to dialogues and participate in
+[[https://en.wikipedia.org/wiki/Speech_shadowing][shadowing]]. This
+seems to be an excellent way to learn some initial every-day-use phrases
+in a language. However, it doesn't have a monthly fee.

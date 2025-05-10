@@ -1,0 +1,8 @@
+* Busuu
+:PROPERTIES:
+:CUSTOM_ID: busuu
+:END:
+[[https://www.busuu.com/][busuu]] is a language learning app that seems
+to be on par with [[https://www.duolingo.com/][duolingo]]. One of the
+core features is that you can record yourself speaking in the app and
+get feedback from native speakers.

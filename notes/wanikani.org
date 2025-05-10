@@ -1,0 +1,9 @@
+* wanikani
+:PROPERTIES:
+:CUSTOM_ID: wanikani
+:END:
+https://www.wanikani.com/
+
+[[https://www.wkstats.com][wkstats]] is a good way to keep track of
+current status and provides interesting charts that show progress
+against JLPT level and frequency.

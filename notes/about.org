@@ -1,0 +1,61 @@
+* About
+:PROPERTIES:
+:CUSTOM_ID: about
+:END:
+This is a [[https://maggieappleton.com/garden-history][digital garden 🌱
+or second brain 🧠]] with some attempt at following
+[[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] note
+taking.
+
+Hopefully this site will become something that's easy for me to lookup
+things that I've already learned. I intend to use this to collect notes
+and thoughts.
+
+It's meant to be entirely self serving, but I guess there's a small
+chance that someone else might find value here.
+
+** How This site works
+The notes exist in a flat directory (i.e. no sub directories). 
+However, notes are linked together in a structured way.
+
+At the bottom of each note a list of links (BackLinks) show what other notes link to it.
+
+*** Why org files?
+    I think markdown makes sense as a format that you expect other people to work with. However, this site is entirely for me.  I'm interested in exploring org mode and some of the features it provides.  
+
+    The hope is that org mode might help make some of the not-so-fun tasks more fun and provide some personal book keeping/organization.  
+
+    Since this site is mostly just links to links with some notes along the way, this seems like a reasonable place to get some org mode reps in.
+
+    I'm also playing around with using [[https://orgmode.org/worg/org-contrib/babel/][babel]] to do kind of a [[https://jupyter.org/][jupyter notebooks]] type of thing with languages other than python.
+
+    org files and org mode seem to align with ideas/wants that i've already had.  
+    e.g. 
+    - this site
+    - [[https://github.com/dfirebaugh/planjam][planjam]]
+    - physical notebooks i've tried to keep
+    - etc...
+
+    I migrated this site from markdown to org files using [[https://pandoc.org/installing.html][pandoc]] and a simple bash script.
+    This still required a bit of fixup, but the process was simple.
+
+    Org files can directly translate to markdown files.  So, the cost to move back isn't much. Aside from completely clobbering git.
+
+** Notes
+:PROPERTIES:
+:CUSTOM_ID: notes
+:END:
+- [[./fleeting_notes.org][Fleeting Notes]]
+- [[./literature_notes.org][Literature Notes]]
+- [[./permanent_notes.org][Permanent Notes]]
+
+** Categories
+:PROPERTIES:
+:CUSTOM_ID: categories
+:END:
+- [[./learning.org][Learning]]
+- [[./bookclub.org][BookClub]]
+- [[./japan.org][Japan]]
+- [[./programming.org][Programming]]
+- [[./music.org][Music]]
+- [[./coursework.org][Coursework]]

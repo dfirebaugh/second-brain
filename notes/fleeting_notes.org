@@ -1,0 +1,6 @@
+* Fleeting Notes
+:PROPERTIES:
+:CUSTOM_ID: fleeting-notes
+:END:
+
+I may place notes here temporarily and then graduate them to some other location.

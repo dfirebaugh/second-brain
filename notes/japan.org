@@ -1,0 +1,17 @@
+* All Things Japan
+:PROPERTIES:
+:CUSTOM_ID: all-things-japan
+:END:
+** Language
+:PROPERTIES:
+:CUSTOM_ID: language
+:END:
+[[./japanese_language.org][Japanese Language]]
+
+** Music
+:PROPERTIES:
+:CUSTOM_ID: music
+:END:
+- [[./city_pop.org][City Pop]]
+- [[https://youtu.be/PbISczErpKY][Mrs. Green Apple - WanteD! WanteD!]]
+

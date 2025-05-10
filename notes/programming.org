@@ -1,0 +1,11 @@
+* Programming
+:PROPERTIES:
+:CUSTOM_ID: programming
+:END:
+- [[./golang.org][Go]]
+- [[./wasm.org][Web Assembly]]
+- [[./design_patterns.org][Design Patterns]]
+- [[./the_recurse_center.org][The Recurse Center]]
+- [[./building_a_compiler.org][Building a Compiler]]
+- [[./graphics.org][Graphics]]
+- [[./stgit.org][stgit]]

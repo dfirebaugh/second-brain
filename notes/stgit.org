@@ -1,0 +1,87 @@
+#+ TITLE: stgit usage
+
+* stgit
+:PROPERTIES:
+:CUSTOM_ID: stgit 
+:END:
+
+** what's the point?
+:PROPERTIES:
+:CUSTOM_ID: what's the point?
+:END:
+The idea is to be able to keep a clean git history that allows for it to be git bisectable.
+Rather than co-mingling git commits, commits should contain one reasonable change.
+
+stgit also allows for reordering commits before they are pushed.
+So, if you're building out some new feature, you could work out different parts of you code and move them around after the fact.
+
+* workflow
+:PROPERTIES:
+:CUSTOM_ID: workflow 
+:END:
+
+** initialize a path
+:PROPERTIES:
+:CUSTOM_ID: initialize a path
+:END:
+
+#+begin_src bash
+  stg init
+#+end_src
+
+** create a new patch
+:PROPERTIES:
+:CUSTOM_ID: create a new path
+:END:
+
+#+begin_src bash
+  stg new <name of patch>
+#+end_src
+
+... make some changes
+
+** Add all changes
+:PROPERTIES:
+:CUSTOM_ID: add all changes 
+:END:
+
+this seems to add every change to patch regardless on if it was staged or not.
+
+#+begin_src bash
+  stg refresh  
+#+end_src
+
+** show changes
+:PROPERTIES:
+:CUSTOM_ID: show changes
+:END:
+
+#+begin_src bash
+  stg show
+#+end_src
+
+#+begin_src bash
+  stg show <some patch name>
+#+end_src
+
+** commit
+:PROPERTIES:
+:CUSTOM_ID: commit
+:END:
+
+#+begin_src bash
+  stg commit --all
+#+end_src
+
+this tells stg that the commits have graduated to actual commits (they were actual commits before, but now stg will stop tracking them).
+I think the intent is for you to git push after this.
+
+
+** Reference
+:PROPERTIES:
+:CUSTOM_ID: reference
+:END:
+
+- Official documentation: https://stacked-git.github.io/guides/tutorial/
+- `man stg` for local command reference
+

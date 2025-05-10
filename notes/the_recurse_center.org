@@ -1,0 +1,10 @@
+* The Recurse Center
+:PROPERTIES:
+:CUSTOM_ID: the-recurse-center
+:END:
+A self-directed, community driven educational retreat for programmers.
+
+https://www.recurse.com/
+
+They also have an interesting [[https://joy.recurse.com/][community
+blog]] that's worth checking in on every once and a while.

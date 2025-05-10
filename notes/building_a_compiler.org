@@ -1,0 +1,37 @@
+* Lexer
+:PROPERTIES:
+:CUSTOM_ID: lexer
+:END:
+produces tokens
+
+Take the input and pass tokens to the parser.
+
+Excellent talk [[https://youtu.be/HxaD_trXwRE][rob pike - Lexical
+Scanning in Go]]
+
+* Parser
+:PROPERTIES:
+:CUSTOM_ID: parser
+:END:
+[[https://youtu.be/bxpc9Pp5pZM][parsing]] Parse the tokens into an
+[[https://ruslanspivak.com/lsbasi-part7/][AST]]
+[[https://youtu.be/VZ5DJopq5JA][parsing algorithms]]
+
+[[https://pkg.go.dev/go/ast][golang ast package]]
+
+https://astexplorer.net/
+
+* Emitter
+:PROPERTIES:
+:CUSTOM_ID: emitter
+:END:
+[[https://youtu.be/ws-_I9RKqSg][Wouter van Oortmerssen - Bring your
+language to Wasm]]
+
+* llvm ir in golang
+:PROPERTIES:
+:CUSTOM_ID: llvm-ir-in-golang
+:END:
+https://blog.gopheracademy.com/advent-2018/llvm-ir-and-go/
+
+https://www.aosabook.org/en/llvm.html

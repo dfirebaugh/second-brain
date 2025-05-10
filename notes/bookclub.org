@@ -1,0 +1,52 @@
+* Book Club 
+:PROPERTIES:
+:CUSTOM_ID: bookclub
+:END:
+
+   I'm in a bookclub with some friends.
+   We take turns picking books.
+   At any point we can (as a group) decide to shelf a book (which basically means we might come back to it, but we probably wont).
+
+   We typically read about 150 pages every two weeks.
+
+** Podcast
+:PROPERTIES:
+:CUSTOM_ID: podcast 
+:END:
+   we are testing out recording the book club meetings as a [[https://creators.spotify.com/pod/profile/craig-ervin-jr/episodes/Uprooted-Final-Thoughts--Forest-Fights--and-That-Dang-Dragon-Disappointment-e31qs4l][podcast]].
+
+** Books
+:PROPERTIES:
+:CUSTOM_ID: books
+:END:
+*** Rating system
+:PROPERTIES:
+:CUSTOM_ID: rating system 
+:END:
+    I'll loosely slap a rating on these based on how much I like the book.
+    5 means i liked it a lot.
+
+   - 🕮 - one point
+
+   - 🗏 - half a point 
+
+   (e.g. 🕮🕮🗏 == 2.5)
+
+
+*** Book List
+:PROPERTIES:
+:CUSTOM_ID: book list 
+:END:
+- [[https://www.goodreads.com/book/show/13578175-the-emperor-s-soul][The Emperor's Soul]]
+     🕮🕮🕮🕮
+- [[https://www.goodreads.com/book/show/41821.The_Gods_Themselves][The Gods Themselves]]
+     (didn't finish)
+- [[https://www.goodreads.com/book/show/57945316-babel][Babel]]
+     🕮🕮🕮🗏
+- [[https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy][The Hitchhiker's Guide to the Galaxy]]
+     🕮🕮🕮🕮
+- [[https://www.goodreads.com/book/show/22544764-uprooted][Uprooted]]
+     🕮🕮🕮🕮🗏
+- [[https://www.goodreads.com/book/show/51901147-the-ballad-of-songbirds-and-snakes][The Ballad of Songbirds and Snakes]]
+     (in progress)
+

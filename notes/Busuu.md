@@ -1,2 +1,0 @@
-# Busuu
-[busuu](https://www.busuu.com/) is a language learning app that seems to be on par with [duolingo](https://www.duolingo.com/).  One of the core features is that you can record yourself speaking in the app and get feedback from native speakers.

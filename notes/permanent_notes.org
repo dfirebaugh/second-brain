@@ -1,0 +1,7 @@
+* Permanent Notes
+:PROPERTIES:
+:CUSTOM_ID: permanent-notes
+:END:
+- [[./the_feynman_technique.org][The Feynman Technique]]
+- [[./spaced_repetition][Spaced Repetition]]
+- [[./comprehensible_input.org][Comprehensible Input]]
