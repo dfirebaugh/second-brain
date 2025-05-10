@@ -1,6 +1,6 @@
 module github.com/dfirebaugh/second-brain
 
-go 1.22.0
+go 1.24.0
 
 require (
 	github.com/niklasfasching/go-org v1.7.0

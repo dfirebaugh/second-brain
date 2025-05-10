@@ -26,11 +26,11 @@
     I'll loosely slap a rating on these based on how much I like the book.
     5 means i liked it a lot.
 
-   - 🕮 - one point
+   - 📖 - one point
 
-   - 🗏 - half a point 
+   - 📃 - half a point 
 
-   (e.g. 🕮🕮🗏 == 2.5)
+   (e.g. 📖📖📃 == 2.5)
 
 
 *** Book List
@@ -38,15 +38,15 @@
 :CUSTOM_ID: book list 
 :END:
 - [[https://www.goodreads.com/book/show/13578175-the-emperor-s-soul][The Emperor's Soul]]
-     🕮🕮🕮🕮
+     📖📖📖📖
 - [[https://www.goodreads.com/book/show/41821.The_Gods_Themselves][The Gods Themselves]]
      (didn't finish)
 - [[https://www.goodreads.com/book/show/57945316-babel][Babel]]
-     🕮🕮🕮🗏
+     📖📖📖📃
 - [[https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy][The Hitchhiker's Guide to the Galaxy]]
-     🕮🕮🕮🕮
+     📖📖📖📖
 - [[https://www.goodreads.com/book/show/22544764-uprooted][Uprooted]]
-     🕮🕮🕮🕮🗏
+     📖📖📖📖📃
 - [[https://www.goodreads.com/book/show/51901147-the-ballad-of-songbirds-and-snakes][The Ballad of Songbirds and Snakes]]
      (in progress)
 
