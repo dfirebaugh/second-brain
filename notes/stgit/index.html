@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+    <title>stgit • Dustin Firebaugh's Notes</title>
+    <meta property="og:title" content="stgit • Dustin Firebaugh's Notes">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://brain.dustinfirebaugh.com/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home" style="text-decoration: none;">
+            <h3>🔥</h3>
+        </a>
+        <nav>
+            <a href="/notes/about/">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <style>
+            pre {
+                background: black;
+            }
+
+            code {
+                background-color: black;
+            }
+        </style>
+        <article>
+            <nav>
+<ul>
+<li><a href="#stgit">stgit</a>
+<ul>
+<li><a href="#what's the point?">what&#39;s the point?</a>
+</li>
+</ul>
+</li>
+<li><a href="#workflow">workflow</a>
+<ul>
+<li><a href="#initialize a path">initialize a path</a>
+</li>
+<li><a href="#create a new path">create a new patch</a>
+</li>
+<li><a href="#add all changes">Add all changes</a>
+</li>
+<li><a href="#show changes">show changes</a>
+</li>
+<li><a href="#commit">commit</a>
+</li>
+<li><a href="#reference">Reference</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<div id="outline-container-stgit" class="outline-2">
+<h2 id="stgit">
+stgit
+</h2>
+<div id="outline-text-stgit" class="outline-text-2">
+<div id="outline-container-what's the point?" class="outline-3">
+<h3 id="what's the point?">
+what&#39;s the point?
+</h3>
+<div id="outline-text-what's the point?" class="outline-text-3">
+<p>The idea is to be able to keep a clean git history that allows for it to be git bisectable.
+Rather than co-mingling git commits, commits should contain one reasonable change.</p>
+<p>
+stgit also allows for reordering commits before they are pushed.
+So, if you&#39;re building out some new feature, you could work out different parts of you code and move them around after the fact.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-workflow" class="outline-2">
+<h2 id="workflow">
+workflow
+</h2>
+<div id="outline-text-workflow" class="outline-text-2">
+<div id="outline-container-initialize a path" class="outline-3">
+<h3 id="initialize a path">
+initialize a path
+</h3>
+<div id="outline-text-initialize a path" class="outline-text-3">
+<pre><code class="language-bash">
+  stg init
+</code></pre>
+</div>
+</div>
+<div id="outline-container-create a new path" class="outline-3">
+<h3 id="create a new path">
+create a new patch
+</h3>
+<div id="outline-text-create a new path" class="outline-text-3">
+<pre><code class="language-bash">
+  stg new &lt;name of patch&gt;
+</code></pre>
+<p>
+… make some changes</p>
+</div>
+</div>
+<div id="outline-container-add all changes" class="outline-3">
+<h3 id="add all changes">
+Add all changes
+</h3>
+<div id="outline-text-add all changes" class="outline-text-3">
+<p>
+this seems to add every change to patch regardless on if it was staged or not.</p>
+<pre><code class="language-bash">
+  stg refresh
+</code></pre>
+</div>
+</div>
+<div id="outline-container-show changes" class="outline-3">
+<h3 id="show changes">
+show changes
+</h3>
+<div id="outline-text-show changes" class="outline-text-3">
+<pre><code class="language-bash">
+  stg show
+</code></pre>
+<pre><code class="language-bash">
+  stg show &lt;some patch name&gt;
+</code></pre>
+</div>
+</div>
+<div id="outline-container-commit" class="outline-3">
+<h3 id="commit">
+commit
+</h3>
+<div id="outline-text-commit" class="outline-text-3">
+<pre><code class="language-bash">
+  stg commit --all
+</code></pre>
+<p>
+this tells stg that the commits have graduated to actual commits (they were actual commits before, but now stg will stop tracking them).
+I think the intent is for you to git push after this.</p>
+</div>
+</div>
+<div id="outline-container-reference" class="outline-3">
+<h3 id="reference">
+Reference
+</h3>
+<div id="outline-text-reference" class="outline-text-3">
+<ul>
+<li>Official documentation: <a href="https://stacked-git.github.io/guides/tutorial/">https://stacked-git.github.io/guides/tutorial/</a></li>
+<li>`man stg` for local command reference</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+        </article>
+        <hr>
+        <p class="backlinks-title larger">Backlinks</p>
+        <ul class="backlinks-container">
+            
+            <li class="backlink">
+                <a href="/notes/programming/" class="backlink__link">programming</a>
+                <div class="backlink__preview" role="none">
+                    <h1>programming</h1>
+                    <p>* Programming
+:PROPERTIES:
+:CUSTOM_ID: programming
+:END:
+- [[./golang.org][Go]]
+- [[./wasm.org][Web Assembly]]
+- [[./design_patterns.org][Design Patterns]]
+- [[./the_recurse_center.org][The Recurse Ce...</p>
+                </div>
+            </li>
+            
+        </ul>
+    </main>
+    <footer class="page-footer">
+        <small>Copyright Dustin Firebaugh</small>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+
+</html>

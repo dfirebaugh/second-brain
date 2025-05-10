@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
-    <title>wanikani • Dustin Firebaugh's Notes</title>
-    <meta property="og:title" content="wanikani • Dustin Firebaugh's Notes">
+    <title>building_a_compiler • Dustin Firebaugh's Notes</title>
+    <meta property="og:title" content="building_a_compiler • Dustin Firebaugh's Notes">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
@@ -39,20 +39,60 @@
         <article>
             <nav>
 <ul>
-<li><a href="#wanikani">wanikani</a>
+<li><a href="#lexer">Lexer</a>
+</li>
+<li><a href="#parser">Parser</a>
+</li>
+<li><a href="#emitter">Emitter</a>
+</li>
+<li><a href="#llvm-ir-in-golang">llvm ir in golang</a>
 </li>
 </ul>
 </nav>
-<div id="outline-container-wanikani" class="outline-2">
-<h2 id="wanikani">
-wanikani
+<div id="outline-container-lexer" class="outline-2">
+<h2 id="lexer">
+Lexer
 </h2>
-<div id="outline-text-wanikani" class="outline-text-2">
-<p><a href="https://www.wanikani.com/">https://www.wanikani.com/</a></p>
+<div id="outline-text-lexer" class="outline-text-2">
+<p>produces tokens</p>
 <p>
-<a href="https://www.wkstats.com">wkstats</a> is a good way to keep track of
-current status and provides interesting charts that show progress
-against JLPT level and frequency.</p>
+Take the input and pass tokens to the parser.</p>
+<p>
+Excellent talk <a href="https://youtu.be/HxaD_trXwRE">rob pike - Lexical
+Scanning in Go</a></p>
+</div>
+</div>
+<div id="outline-container-parser" class="outline-2">
+<h2 id="parser">
+Parser
+</h2>
+<div id="outline-text-parser" class="outline-text-2">
+<p><a href="https://youtu.be/bxpc9Pp5pZM">parsing</a> Parse the tokens into an
+<a href="https://ruslanspivak.com/lsbasi-part7/">AST</a>
+<a href="https://youtu.be/VZ5DJopq5JA">parsing algorithms</a></p>
+<p>
+<a href="https://pkg.go.dev/go/ast">golang ast package</a></p>
+<p>
+https://astexplorer.net/</p>
+</div>
+</div>
+<div id="outline-container-emitter" class="outline-2">
+<h2 id="emitter">
+Emitter
+</h2>
+<div id="outline-text-emitter" class="outline-text-2">
+<p><a href="https://youtu.be/ws-_I9RKqSg">Wouter van Oortmerssen - Bring your
+language to Wasm</a></p>
+</div>
+</div>
+<div id="outline-container-llvm-ir-in-golang" class="outline-2">
+<h2 id="llvm-ir-in-golang">
+llvm ir in golang
+</h2>
+<div id="outline-text-llvm-ir-in-golang" class="outline-text-2">
+<p><a href="https://blog.gopheracademy.com/advent-2018/llvm-ir-and-go/">https://blog.gopheracademy.com/advent-2018/llvm-ir-and-go/</a></p>
+<p>
+https://www.aosabook.org/en/llvm.html</p>
 </div>
 </div>
 
@@ -62,19 +102,17 @@ against JLPT level and frequency.</p>
         <ul class="backlinks-container">
             
             <li class="backlink">
-                <a href="/notes/japanese_language/" class="backlink__link">japanese_language</a>
+                <a href="/notes/programming/" class="backlink__link">programming</a>
                 <div class="backlink__preview" role="none">
-                    <h1>japanese_language</h1>
-                    <p>** Japanese Language
+                    <h1>programming</h1>
+                    <p>* Programming
 :PROPERTIES:
-:CUSTOM_ID: japanese-language
+:CUSTOM_ID: programming
 :END:
-[[https://www.tofugu.com/japanese-grammar/verb-conjugation-groups/][verb
-conjugation]]
-
-**** Methods
-:PROPERTIES:
-:CUSTOM_ID: meth...</p>
+- [[./golang.org][Go]]
+- [[./wasm.org][Web Assembly]]
+- [[./design_patterns.org][Design Patterns]]
+- [[./the_recurse_center.org][The Recurse Ce...</p>
                 </div>
             </li>
             

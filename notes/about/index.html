@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="https://brain.dustinfirebaugh.com/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
 </head>
 
 <body>
@@ -36,35 +37,107 @@
             }
         </style>
         <article>
-            <h1>About</h1>
-<p>This is a <a href="https://maggieappleton.com/garden-history">digital garden 🌱 or second brain 🧠</a> with some attempt at following <a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten</a> note taking.</p>
-<p>Hopefully this site will become something that's easy for me to lookup things that I've already learned.
-I intend to use this to collect notes and thoughts.</p>
-<p>It's meant to be entirely self serving, but I guess there's a small chance that someone else might find value here.</p>
-<h4>Editor</h4>
-<p><s>I'm currently experimenting with using <a href="https://obsidian.md/">Obsidian</a> to edit the markdown files for this site.</s></p>
-<blockquote>
-<p>I'm no longer using obsidian.  These files are mostly markdown, the main difference is double square brackets translates to an internal link.  So, I just use a text editor.</p>
-</blockquote>
-<h4>Publishing</h4>
-<p><s>I'm using <a href="https://www.11ty.dev/">eleventy</a></s> as a static site generator and publishing the site through <a href="https://pages.github.com/">gh-pages</a>.</p>
-<blockquote>
-<p>I'm no longer using eleventy as a static site generator.  I migrated to a simplified static site generator that I implemented in go. I did this because the site is incredibly simple and it is now less likely to break over time due to code rot.</p>
-</blockquote>
-<h2>Notes</h2>
+            <nav>
 <ul>
-<li><a href="/notes/Fleeting-Notes/">Fleeting Notes</a></li>
-<li><a href="/notes/Literature-Notes/">Literature Notes</a></li>
-<li><a href="/notes/Permanent-Notes/">Permanent Notes</a></li>
-</ul>
-<h2>Categories</h2>
+<li><a href="#about">About</a>
 <ul>
-<li><a href="/notes/Learning/">Learning</a></li>
-<li><a href="/notes/Japan/">Japan</a></li>
-<li><a href="/notes/Programming/">Programming</a></li>
-<li><a href="/notes/Music/">Music</a></li>
-<li><a href="/notes/Coursework/">Coursework</a></li>
+<li><a href="#headline-2">How This site works</a>
+<ul>
+<li><a href="#headline-3">Why org files?</a>
+</li>
 </ul>
+</li>
+<li><a href="#notes">Notes</a>
+</li>
+<li><a href="#categories">Categories</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<div id="outline-container-about" class="outline-2">
+<h2 id="about">
+About
+</h2>
+<div id="outline-text-about" class="outline-text-2">
+<p>This is a <a href="https://maggieappleton.com/garden-history">digital garden 🌱
+or second brain 🧠</a> with some attempt at following
+<a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten</a> note
+taking.</p>
+<p>
+Hopefully this site will become something that&#39;s easy for me to lookup
+things that I&#39;ve already learned. I intend to use this to collect notes
+and thoughts.</p>
+<p>
+It&#39;s meant to be entirely self serving, but I guess there&#39;s a small
+chance that someone else might find value here.</p>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+How This site works
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>The notes exist in a flat directory (i.e. no sub directories). 
+However, notes are linked together in a structured way.</p>
+<p>
+At the bottom of each note a list of links (BackLinks) show what other notes link to it.</p>
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
+Why org files?
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<p>I think markdown makes sense as a format that you expect other people to work with. However, this site is entirely for me.  I&#39;m interested in exploring org mode and some of the features it provides.  </p>
+<p>
+    The hope is that org mode might help make some of the not-so-fun tasks more fun and provide some personal book keeping/organization.  </p>
+<p>
+    Since this site is mostly just links to links with some notes along the way, this seems like a reasonable place to get some org mode reps in.</p>
+<p>
+    I&#39;m also playing around with using <a href="https://orgmode.org/worg/org-contrib/babel/">babel</a> to do kind of a <a href="https://jupyter.org/">jupyter notebooks</a> type of thing with languages other than python.</p>
+<p>
+    org files and org mode seem to align with ideas/wants that i&#39;ve already had.  
+    e.g. </p>
+<ul>
+<li>this site</li>
+<li><a href="https://github.com/dfirebaugh/planjam">planjam</a></li>
+<li>physical notebooks i&#39;ve tried to keep</li>
+<li>etc…</li>
+</ul>
+<p>I migrated this site from markdown to org files using <a href="https://pandoc.org/installing.html">pandoc</a> and a simple bash script.
+    This still required a bit of fixup, but the process was simple.</p>
+<p>
+    Org files can directly translate to markdown files.  So, the cost to move back isn&#39;t much. Aside from completely clobbering git.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-notes" class="outline-3">
+<h3 id="notes">
+Notes
+</h3>
+<div id="outline-text-notes" class="outline-text-3">
+<ul>
+<li><a href="/notes/fleeting_notes/">Fleeting Notes</a></li>
+<li><a href="/notes/literature_notes/">Literature Notes</a></li>
+<li><a href="/notes/permanent_notes/">Permanent Notes</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-categories" class="outline-3">
+<h3 id="categories">
+Categories
+</h3>
+<div id="outline-text-categories" class="outline-text-3">
+<ul>
+<li><a href="/notes/learning/">Learning</a></li>
+<li><a href="/notes/bookclub/">BookClub</a></li>
+<li><a href="/notes/japan/">Japan</a></li>
+<li><a href="/notes/programming/">Programming</a></li>
+<li><a href="/notes/music/">Music</a></li>
+<li><a href="/notes/coursework/">Coursework</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 
         </article>
         <hr>
@@ -76,6 +149,10 @@ I intend to use this to collect notes and thoughts.</p>
     <footer class="page-footer">
         <small>Copyright Dustin Firebaugh</small>
     </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
 </body>
 
 </html>
