@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="https://brain.dustinfirebaugh.com/assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@1.0.1/css/catppuccin-frappe.css">
 </head>
 
 <body>
@@ -54,6 +55,26 @@
 <li><a href="#add all changes">Add all changes</a>
 </li>
 <li><a href="#show changes">show changes</a>
+</li>
+<li><a href="#headline-8">navigating between patches</a>
+<ul>
+<li><a href="#headline-9">unapply a single patch</a>
+</li>
+<li><a href="#headline-10">reapply a single patch</a>
+</li>
+<li><a href="#headline-11">navigate to a patch</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-12">catch up with remote</a>
+<ul>
+<li><a href="#headline-13">unapply every patch</a>
+</li>
+<li><a href="#headline-14">pull down remote changes</a>
+</li>
+<li><a href="#headline-15">reapply every patch</a>
+</li>
+</ul>
 </li>
 <li><a href="#commit">commit</a>
 </li>
@@ -132,6 +153,85 @@ show changes
 <pre><code class="language-bash">
   stg show &lt;some patch name&gt;
 </code></pre>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">
+navigating between patches
+</h3>
+<div id="outline-text-headline-8" class="outline-text-3">
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+unapply a single patch
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<pre><code class="language-bash">
+stg pop
+</code></pre>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-4">
+<h4 id="headline-10">
+reapply a single patch
+</h4>
+<div id="outline-text-headline-10" class="outline-text-4">
+<pre><code class="language-bash">
+stg push
+</code></pre>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-4">
+<h4 id="headline-11">
+navigate to a patch
+</h4>
+<div id="outline-text-headline-11" class="outline-text-4">
+<blockquote>
+<p>this applies the necessary push/pop operations to get to the patch</p>
+</blockquote>
+<pre><code class="language-bash">
+stg goto &lt;patch-name&gt;
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+catch up with remote
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<div id="outline-container-headline-13" class="outline-4">
+<h4 id="headline-13">
+unapply every patch
+</h4>
+<div id="outline-text-headline-13" class="outline-text-4">
+<pre><code class="language-bash">
+stg pop --all
+# you can checkout where you are with standard commands
+#  e.g. `git status` `git log --oneline` `stg series`
+</code></pre>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-4">
+<h4 id="headline-14">
+pull down remote changes
+</h4>
+<div id="outline-text-headline-14" class="outline-text-4">
+<pre><code class="language-bash">
+git pull
+</code></pre>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-4">
+<h4 id="headline-15">
+reapply every patch
+</h4>
+<div id="outline-text-headline-15" class="outline-text-4">
+<pre><code class="language-bash">
+stg push --all
+</code></pre>
+</div>
+</div>
 </div>
 </div>
 <div id="outline-container-commit" class="outline-3">
