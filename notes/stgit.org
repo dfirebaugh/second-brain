@@ -64,6 +64,47 @@ this seems to add every change to patch regardless on if it was staged or not.
   stg show <some patch name>
 #+end_src
 
+
+** navigating between patches
+
+*** unapply a single patch
+#+begin_src bash
+stg pop
+#+end_src
+
+*** reapply a single patch
+#+begin_src bash
+stg push
+#+end_src
+
+*** navigate to a patch
+#+begin_quote
+this applies the necessary push/pop operations to get to the patch
+#+end_quote
+
+#+begin_src bash
+stg goto <patch-name>
+#+end_src
+
+** catch up with remote
+
+*** unapply every patch
+#+begin_src bash
+stg pop --all
+# you can checkout where you are with standard commands
+#  e.g. `git status` `git log --oneline` `stg series`
+#+end_src
+
+*** pull down remote changes
+#+begin_src bash
+git pull
+#+end_src
+
+*** reapply every patch
+#+begin_src bash
+stg push --all
+#+end_src
+
 ** commit
 :PROPERTIES:
 :CUSTOM_ID: commit
